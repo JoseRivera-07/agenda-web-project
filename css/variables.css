@@ -1,0 +1,16 @@
+:root {
+    /* Paleta de colores */
+    --color-acento: #8061FF;
+
+    /* Texto */
+    --color-texto-header: #FFFFFF;
+    --color-texto-body: #D9E1FF;
+
+    /* Fondos */
+    --bg-modulo: #0C0A33;
+    --bg-pagina: #150D48;
+
+    /* Fuentes */
+    --fuente-encabezados: 'Syne', sans-serif;
+    --fuente-cuerpo: 'Arimo', sans-serif;
+}

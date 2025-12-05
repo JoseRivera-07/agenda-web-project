@@ -1,0 +1,18 @@
+body {
+    background-color: var(--bg-pagina);
+    font-family: var(--fuente-cuerpo);
+    color: var(--color-texto-body);
+    line-height: 1.5;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: var(--fuente-encabezados);
+    color: var(--color-texto-header);
+}
+
+main {
+    background-color: var(--bg-modulo);
+    padding: 20px;
+    border-radius: 12px;
+}
