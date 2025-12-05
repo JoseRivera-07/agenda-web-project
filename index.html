@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>CRUDScope – HTML MediaPanel</title>
-    <base href="./">
-
-    <!-- Fuentes -->
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700&family=Arimo:wght@400&display=swap" rel="stylesheet">
+    <base href="https://ejemplo.com/">
 
     <!-- Estilos globales -->
     <link rel="stylesheet" href="styles/reset.css">
@@ -16,15 +13,20 @@
 
 <body>
 
-    <!-- ======================= HEADER ======================= -->
-    <header>
-        <h1>CRUDScope – HTML MediaPanel</h1>
-        <p class="descripcion">
-            Sistema demostrativo CRUD con multimedia y estructura semántica HTML5.
-        </p>
+    <!-- Encabezado principal -->
+    <header class="app-header">
+        <div class="header-container">
+            <h1>CRUDScope – HTML MediaPanel</h1>
+            <p>
+                Un panel de gestión de tareas que simula operaciones 
+                <abbr title="Create, Read, Update, Delete">CRUD</abbr> 
+                usando HTML estático.
+            </p>
+        </div>
     </header>
 
-    <!-- ======================== NAV ========================== -->
+
+    <!-- Navegación -->
     <nav>
         <ul>
             <li><a href="#crear">Crear</a></li>
@@ -34,47 +36,95 @@
         </ul>
     </nav>
 
-    <!-- ======================== MAIN ========================= -->
+    <!-- Contenido principal -->
     <main>
 
-        <!-- Sección Crear -->
+        <!-- Sección crear tarea -->
         <section id="crear">
-            <h2>Crear Tarea</h2>
-            <!-- Aquí irá el formulario -->
+            <h2>Crear tarea</h2>
+
+            <form>
+                <label>Título:
+                    <input type="text" placeholder="Título de la tarea">
+                </label>
+
+                <label>Descripción:
+                    <textarea placeholder="Escribe la descripción"></textarea>
+                </label>
+
+                <label>Fecha límite:
+                    <input type="date">
+                </label>
+
+                <button type="submit">Crear</button>
+            </form>
         </section>
 
-        <!-- Sección Listado -->
+        <!-- Sección listado de tareas -->
         <section id="listado">
-            <h2>Listado de Tareas</h2>
-            <!-- Aquí irá la tabla -->
+            <h2>Listado de tareas</h2>
+
+            <table>
+                <tr>
+                    <th>Tarea</th>
+                    <th>Fecha</th>
+                    <th>Acciones</th>
+                </tr>
+
+                <tr>
+                    <td>Ejemplo de tarea <abbr title="Create, Read, Update, Delete">CRUD</abbr></td>
+                    <td><time datetime="2025-12-04">4/12/2025</time></td>
+                    <td>
+                        <button>Actualizar</button>
+                        <button>Eliminar</button>
+                    </td>
+                </tr>
+            </table>
         </section>
 
-        <!-- Aside Global -->
-        <aside>
-            <h3>Información adicional</h3>
-            <p>Consejos, estados o ayuda del sistema.</p>
-        </aside>
-
-        <!-- Sección Multimedia -->
+        <!-- Sección multimedia -->
         <section id="multimedia">
             <h2>Multimedia del sistema</h2>
-            <!-- Aquí irá el audio y video -->
+
+            <audio controls>
+                <source src="assets/audio/sample.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+
+            <video controls width="320" poster="assets/img/poster.jpg">
+                <source src="assets/video/sample.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
         </section>
 
-        <!-- Sección Acerca de -->
-        <section id="acerca">
-            <h2>Acerca del proyecto</h2>
-            <!-- Aquí irá información del proyecto -->
-        </section>
+        <!-- Artículo ejemplo -->
+        <article>
+            <h3>Tarea destacada</h3>
+            <p>
+                Esta es una tarea de ejemplo con <strong>texto destacado</strong>,
+                partes en <em>cursiva</em>, algo <u>subrayado</u> y un <mark>resaltado</mark>.
+            </p>
+        </article>
+
+        <!-- Información extra -->
+        <aside>
+            <h3>Tips</h3>
+            <ul>
+                <li>Organiza tus tareas por prioridad.</li>
+                <li>Revisa el calendario usando la sección de listado.</li>
+            </ul>
+        </aside>
 
     </main>
 
-    <!-- ======================= FOOTER ======================== -->
-    <footer>
-        <p>© <time datetime="2025">2025</time> CRUDScope – HTML MediaPanel</p>
+    <!-- Pie de página -->
+    <footer id="acerca">
+        <p>Proyecto académico CRUDScope</p>
         <address>
-            Contacto: <a href="mailto:tuemail@example.com">tuemail@example.com</a>
+            Desarrollado por Jose Miguel —  
+            Contacto: correo@ejemplo.com
         </address>
+        <p>2025</p>
     </footer>
 
 </body>

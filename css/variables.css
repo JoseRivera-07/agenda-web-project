@@ -1,16 +1,19 @@
+/* variables.css */
+
+/* 🎨 Paleta */
 :root {
-    /* Paleta de colores */
-    --color-acento: #8061FF;
+    /* Colores de la marca */
+    --accent-primary: #8061FF;
+
+    /* Backgrounds */
+    --bg-page: #150D48;
+    --bg-module: #0C0A33;
 
     /* Texto */
-    --color-texto-header: #FFFFFF;
-    --color-texto-body: #D9E1FF;
+    --text-header: #FFFFFF;
+    --text-body: #D9E1FF;
 
-    /* Fondos */
-    --bg-modulo: #0C0A33;
-    --bg-pagina: #150D48;
-
-    /* Fuentes */
-    --fuente-encabezados: 'Syne', sans-serif;
-    --fuente-cuerpo: 'Arimo', sans-serif;
+    /* Tipografías */
+    --font-heading: 'Syne', sans-serif;
+    --font-body: 'Arimo', sans-serif;
 }
